@@ -8,6 +8,7 @@ Scenario: User login successfully
 
     Given I create a new User
     When I type email
+    When I execute using handler 'Node1' the SSH command 'mkdir -p hello'
     # When I type password
     # When I click on 'Login'
     # Then I should see the next Welcome
